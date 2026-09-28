@@ -17,4 +17,21 @@ if (isset($_POST["numero1"]) && isset($_POST["numero2"]) && isset($_POST["operac
     }
 }
 
+
+    if ($operacion == "multiplicacion") {
+        $resultado = $numero1 * $numero2;
+        echo $resultado;
+    }
+
+    if ($operacion == "division") {
+
+        if ($numero2 != 0) {
+            $resultado = $numero1 / $numero2;
+            echo $resultado;
+        } else {
+            echo "No se puede dividir entre 0";
+        }
+    }
+
+
 ?>
